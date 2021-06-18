@@ -1,0 +1,37 @@
+<!--<form (ngSubmit)= "create()" class="w-25 mx-auto">-->
+<form (ngSubmit)= "create()" class="w-25 mx-auto">
+  <br>
+  <div class="form-group">
+    <!--<label for="formGroupExampleInput2">Another label</label>-->
+    <input type="text" class="form-control"   [(ngModel)]="cliente.nombre" required  name="nombre" placeholder="Nombre">
+  </div>
+  <br>
+  <div class="form-group">
+    <!--<label for="formGroupExampleInput2">Another label</label>-->
+    <input type="text" class="form-control" [(ngModel)]="cliente.apellido"  name="apellido" required placeholder="Apellido">
+  </div>
+  <br>
+  <div class="form-group">
+    <!--<label for="formGroupExampleInput2">Another label</label>-->
+    <input type="text" class="form-control"  [(ngModel)]="cliente.dni"  name="dni" required placeholder="DNI">
+  </div>
+  <br>
+  <div class="form-group">
+    <!--<label for="formGroupExampleInput2">Another label</label>-->
+    <input type="email" class="form-control"   [(ngModel)]="cliente.email"  name="email" required placeholder="Email">
+  </div>
+  <br>
+
+  <div class="col text-center">
+  <button  class="btn btn-primary " (click)='create()' *ngIf="!cliente.id else elseBlock"  >Register</button>
+ <ng-template #elseBlock>
+   <button  class="btn btn-primary " (click)='update()' >Edit</button>
+
+ </ng-template>
+  </div>
+
+  <!--DELETE BUTOOM-->
+
+</form>
+
+

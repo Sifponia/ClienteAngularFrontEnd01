@@ -1,0 +1,16 @@
+/*C:\Users\diego\Desktop\calendar\Cliente>cd src
+
+C:\Users\diego\Desktop\calendar\Cliente\src>cd app
+
+C:\Users\diego\Desktop\calendar\Cliente\src\app>ng g c Clientes
+-------------------------------------------------
+ crea los servicios del cliente
+ng g service clientes
+*/
+
+/*
+
+>ng g c clientes/form --flat
+CREA un componente sin la carpeta dentro del directorio clientes
+ */
+
