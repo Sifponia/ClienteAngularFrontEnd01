@@ -14,3 +14,8 @@ ng g service clientes
 CREA un componente sin la carpeta dentro del directorio clientes
  */
 
+.tableStyle .thead-light th {
+  color: #135ca5!important;
+  background-color: rgba(255,255,255,0.2)!important;
+}
+

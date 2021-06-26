@@ -1,1 +1,392 @@
-<p>home works!</p>
+<!--<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio</title>
+</head>
+<body>
+
+<h1 th:text="${saltafolio}" ></h1>
+
+
+
+
+</body>
+</html>-->
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portafolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!---
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+
+
+
+  -->
+
+
+  <!--FontsGoogle-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2? family = Source + Code + Pro: wght @ 200 & display = swap "
+        rel=" stylesheet ">
+
+  <!--UIKIT-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/css/uikit.min.css"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!--***************MY CODE*****************-->
+
+  <!--***************IMAGE VIEW*****************-->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <!--***************CDN AOES*****************-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <!---------LIST_NAV----->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Bootstrap core CSS -->
+  <!-- <link th:href="@{/empleos_style/bootstrap/css/bootstrap.min.css}" rel="stylesheet">-->
+  <!-- Custom styles for this template -->
+
+</head>
+
+
+<header>
+
+
+  <!------------------------d4ata-aos="zoom-in" @{/img/avatar.jpg} -------------------------------------------------->
+  <!--<p th:text="'/imgFreelance/'+${imgPP}">Hi</p>-->
+  <!--  th:src="@{'/img-vacantes/'+${imgPP}}"         th:src="@{/img-vacantes/{imgg} (imgg=${vacante.imagen} )} -->
+  <br>
+  <div class="card imgcenter rounded-circle divImage mt-5" style="width: 14.6rem">
+
+    <img src="./assets/img/man.jpg" id="blah"
+         class="card-img-top rounded-circle" width="140" height="140"/>
+    <div class="card-body">
+
+
+      <!--- <input type="file" id="imgInp" class="nuestroinput  " />-->
+
+
+      <!--
+      <div class="upload-btn-wrapper">
+          <button class="btn">Upload Photo</button>
+          <input type="file" name="myfile" id="imgInp" class="nuestroinput filebtn"/>
+      </div>-->
+
+
+    </div>
+  </div>
+
+
+  <!----
+      <div
+        <img  src="./img/background-2543427_1280.jpg"  class="rounded-circle" >
+        <div class="upload-btn-wrapper">
+          <button class="btn">Cambiar Imagen</button>
+          <input type="file" name="myfile" id="imgInp" class="nuestroinput filebtn  "  />
+        </div>
+      </div>
+
+     ----------------sec:authentication="name"--------------------------------------->
+  <h1 class="nameH1">Oscar Almendarez</h1>
+  <section>
+    <!--comment-->
+    <p>Hello! I am Oscar Almendarez. I work as interface
+      and Full Stack developer. I have passion for pixel perfect,
+      minimal and easy to use interfaces. I'm focused, dedicated, hard-working and willing to learn in a changing
+      and
+      challenging environment.</p>
+    <a href="mailto:Otabora@outlook.es" target="_blank">
+      <i class="fa fab fa-envelope-open-text"></i>
+    </a>
+    <a href="https://www.facebook.com/maury.maurydos/" target="_blank">
+      <i class="fab fa-facebook"></i>
+
+    </a>
+    <a href="https://www.facebook.com/maury.maurydos/" target="_blank">
+      <i class="fas fab fa-globe"></i>
+
+    </a>
+
+    <a href="https://github.com/Sifponia" target="_blank">
+      <i class="fab fa-github-alt"></i>
+
+    </a>
+    <a target="_blank">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </section>
+</header>
+<main>
+  <!---
+      <div class="upload-btn-wrapper">
+        <button class="btn">Cambiar Imagen</button>
+        <input type="file" name="myfile" id="imgInp" class="nuestroinput filebtn  " />
+      </div>
+    -->
+
+  <!--data-aos="fade-left" data-aos-duration="2000"  data-aos="fade-left" data-aos-duration="2000" --->
+  <section>
+    <h3 class="text-center" >EXPERIENCIA ACADEMICA</h3>
+    <article class='course'>
+      <div class='title'>
+        <h4>Universidad</h4>
+      </div>
+      <div class="descrition">
+        <p>UDG</p>
+      </div>
+    </article>
+    <article class='course'>
+      <div class='title'>
+        <h4>Grado Superior</h4>
+      </div>
+      <div class="descrition">
+        <p t>DAM</p>
+      </div>
+    </article>
+    <!--data-aos="fade-left" data-aos-duration="2000" -->
+    <article class='course'>
+      <div class='title'>
+        <h4>Secundaria</h4>
+      </div>
+      <div class="descrition">
+        <p>IFP</p>
+      </div>
+    </article>
+    <article class='course'>
+      <div class='title'>
+        <h4>Cursos</h4>
+      </div>
+      <div class="descrition">
+        <p>Big Data</p>
+      </div>
+    </article>
+    <!--
+    <article class='course'>
+        <div class='title'>
+            <h4>Otros</h4>
+        </div>
+        <div class="descrition">
+            <p th:text="${freelanceFormulario.otros}">Diseño autodidactada</p>
+        </div>
+    </article>-->
+
+
+  </section>
+
+
+  <section class="sectionHabilit">
+    <h3 class="text-center">HABILIDADES</h3>
+
+    <div class='skills'>
+      <div class='column'>
+        <h3>Framework</h3>
+        <ul class="uk-list uk-list-divider uk-list uk-list-large">
+          <li> SPRING BOOT</li>
+          <li> AGULAR</li>
+          <li> VUE</li>
+
+        </ul>
+
+
+      </div>
+
+      <div class='column uk-list '>
+        <h3>Lenguajes de Programacion</h3>
+        <ul class="uk-list uk-list-divider  uk-list uk-list-large">
+          <!--th:each="sections : ${lenguajesProgramacion}"-->
+          <li>JAVA</li>
+          <li>JAVASCRIPT</li>
+          <li>TYPESCRIPT</li>
+          <li>C#</li>
+          <li>PYTHON</li>
+
+
+        </ul>
+
+
+      </div>
+
+
+      <div class='column uk-list '>
+        <h3>Base de Datos</h3>
+        <ul class="uk-list uk-list-divider uk-list uk-list-large">
+          <!--th:each="baseDatosArrays : ${baseDatosArray}"  th:text="${baseDatosArrays}">-->
+          <li>MYSQL</li>
+          <li>MONGOBD</li>
+          <li>FIREBASE</li>
+          <li>SQL</li>
+
+        </ul>
+
+
+      </div>
+
+
+      <!-- <div class='column uk-list '>
+         <h3>Librerias</h3>
+         <ul class="uk-list uk-list-divider uk-list uk-list-large">
+           th:each="librariesArrays : ${librariesArray}"  th:text="${librariesArrays}"
+           <li> SPRING BOOT</li>
+
+         </ul>
+
+
+       </div>-->
+
+    </div>
+
+
+    <div>
+
+
+      <!--<div class='column uk-list '>
+        <h3>Base de Datos</h3>
+        <ul class="uk-list uk-list-divider uk-list uk-list-large">
+          th:each="baseDatosArrays : ${baseDatosArray}"  th:text="${baseDatosArrays}"l
+          <li> SPRING BOOT</li>
+
+        </ul>
+
+
+      </div>-->
+
+
+      <div>
+
+
+
+        <h3 class="text-center">IDIOMAS</h3>
+        <p>🇬🇧 English</p>
+        <p>🇫🇷 French</p>
+        <p>🇪🇸 Spanish</p>
+
+
+      </div>
+    </div>
+  </section>
+  <!---
+  <section>
+    <h3>EDUCACION</h3>
+    <article class='course'>
+      <div class='title'>
+        <h4>Universidad</h4>
+      </div>
+      <div class="descrition">
+        <p>UDG</p>
+      </div>
+    </article>
+    <article class='course'>
+      <div class='title'>
+        <h4>Grado Superior</h4>
+      </div>
+      <div class="descrition">
+        <p>DAM</p>
+      </div>
+    </article>
+    <article class='course'>
+      <div class='title'>
+        <h4>Secundaria</h4>
+      </div>
+      <div class="descrition">
+        <p>Liceo Martin</p>
+      </div>
+    </article>
+    <article class='course'>
+      <div class='title'>
+        <h4>Cursos</h4>
+      </div>
+      <div class="descrition">
+        <p>Big Data</p>
+      </div>
+    </article>
+    <article class='course'>
+      <div class='title'>
+        <h4>Otros</h4>
+      </div>
+      <div class="descrition">
+        <p>Diseño autodidactada</p>
+      </div>
+    </article>
+
+
+
+    <article>
+      <div class='school'>
+        <span>2015-2018</span> <strong>Octocats tech academy</strong>
+      </div>
+      <div class="descrition">
+        Bechelor Degree of Octorobotics
+      </div>
+    </article>
+    <article>
+      <div class='school'>
+        <span>2012-2015</span> <strong>Underwater kittens high school</strong>
+      </div>
+      <div>
+        Main subject: Cathemathics
+      </div>
+    </article>
+
+
+  </section>
+-->
+
+
+  <section>
+
+
+    <h3 class="text-center">ULTIMO TRABAJO</h3>
+    <article>
+      <div class='job-title'>
+        <!--freelanceFormulario- yearComienzo-->
+        <!--  <span th:text="${freelanceFormulario.yearComienzo}" >I</span><span> / </span> <span th:text="${freelanceFormulario.yearFinal}">I</span> <br>-->
+        <!--nombreEmpresa - -->
+        <strong></strong><br>
+        <!--cargo-->
+        <strong>Position: </strong> <strong>Diseñador de Software</strong>
+
+      </div>
+      <div>
+        <!--queRealizabas- -->
+        <p>Edgar Allan Poe perdió a sus padres, actores de teatro
+          itinerantes, cuando contaba apenas dos años de edad.
+          El pequeño Edgar fue educado por John Allan, un acaudalado hombre de negocios de Richmond. Las
+          relaciones de
+          Poe con su padre adoptivo fueron traumáticas; también la temprana muerte de su madre se convertiría
+          en una
+          de sus obsesiones recurrentes. De 1815 a 1820 vivió con John Allan y su esposa en el Reino Unido,
+          donde
+          comenzó su educación.
+
+        </p>
+      </div>
+    </article>
+  </section>
+
+
+</main>
+<footer>
+  <!---
+  <p>Created by: <a href="https://www.flynerd.pl/">@flynerd</a> / <a
+      href="https://www.linkedin.com/in/ritalyczywek/">LinkedIn</a> / 2018 </p>-->
+</footer>
+<!--UIKIT-->
+
+
+<!--***************CDN AOES*****************-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+<!--mouseMpoved and maouseextend-->

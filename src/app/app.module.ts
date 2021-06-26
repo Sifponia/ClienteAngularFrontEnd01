@@ -14,20 +14,20 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
-
+//1)-Router Path:: Sirve para añadir direcciones URL
 const routes: Routes = [
-  {path: '', redirectTo: '/clientes', pathMatch: 'full'},
+  {path: '', redirectTo: 'homePage', pathMatch: 'full'},
   {path: 'game', component: GameComponent},
-  {path: 'clientes', component: ClientesComponent},
+  {path: 'tableclientes', component: ClientesComponent},
   {path: 'clientes/form', component: FormComponent},
   //Enlance para actualizar un cliente
   {path: 'clientes/form/:id', component: FormComponent},
-
+  {path: 'homePage', component: HomeComponent},
 
 
 ]
 
-//Nombres de las clases
+//Nombres:: de las clases
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +37,7 @@ const routes: Routes = [
     HeaderComponent,
     FormComponent
   ],
-  imports: [
+  imports: [//Import:: de las librerias que utilizare
     BrowserModule,
     HttpClientModule,
     FormsModule,
@@ -51,6 +51,6 @@ export class AppModule {
 }
 
 /*
-<!---              "/assets/javascript/bootstrap.bundle.min.js",    "/assets/javascript/popper.min.js",-->
+<!---"/assets/javascript/bootstrap.bundle.min.js",    "/assets/javascript/popper.min.js",-->
 
  */

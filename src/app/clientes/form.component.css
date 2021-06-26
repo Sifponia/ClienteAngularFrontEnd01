@@ -1,0 +1,10 @@
+input{
+  background-color:transparent!important;
+
+}
+
+
+input[placeholder]
+{
+  text-align: center;
+}

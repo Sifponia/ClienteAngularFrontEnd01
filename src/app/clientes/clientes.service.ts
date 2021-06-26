@@ -4,7 +4,7 @@ import {Observable, of, throwError} from "rxjs";
 //Import   Conectar la parte bancken Spring boot con angular
 import {HttpClient, HttpHeaders} from '@angular/common/http'
 import Swal from "sweetalert2";
-import {catchError} from "rxjs/operators";
+import {catchError, map} from "rxjs/operators";
 import {Router} from "@angular/router";
 
 
@@ -19,29 +19,32 @@ export class ClientesService {
   //HEADER
   private httHeaders = new HttpHeaders({'Content-Type': 'application/json'})
 
-  //Conectar la parte bancken Spring boot con angular
+  //Conectar la parte backend Spring boot con angular
   constructor(private http: HttpClient, private router: Router) {
   }
 
   //Devuelve una array de Clientes, se añade un observable
   getClientes(): Observable<Cliente[]> {
     //return of(CLIENTES);//Se hace un casting del observable con of
-    return this.http.get<Cliente[]>(this.urlEndPonint);//IMPORTANTE:: Es el resultado del Backend
+    return this.http.get<Cliente[]>(this.urlEndPonint).pipe(
+      map(response => response as Cliente[])
+    );//IMPORTANTE:: Es el resultado del Backend
   }
 
   //POST CLIENTE
-  create(cliente: Cliente): Observable<Cliente> {
-    return this.http.post<Cliente>(this.urlEndPonint, cliente, {headers: this.httHeaders}).pipe(
+  create(cliente: Cliente): Observable<any> {
+    return this.http.post<any>(this.urlEndPonint, cliente, {headers: this.httHeaders}).pipe(
       catchError(e => {//Alerta de un error al editar un ID
           Swal.fire(
-            `Error al crear cliente ${e.error.mensaje} `,
-            'Datos no correctos',
+            `Error ${e.error.mensaje}`,
+            'Datos no encontrado',
             'error',
           );
           return throwError(e);//Devuelve el error
         }
       )
     );
+
     //IMPORTANTE:: Es el resultado del Backend
   }
 

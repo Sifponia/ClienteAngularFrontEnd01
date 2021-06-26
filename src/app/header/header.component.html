@@ -1,37 +1,38 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+<br>
+<nav class="navbar  navbar-expand-lg navbar-light bg-light">
+  <!--<a class="navbar-brand title" routerLink="/homePage"> <h1>𝑅𝑒𝑔𝑖𝑠𝑡𝑒𝑟 𝐶𝑙𝑖𝑒𝑛𝑡 -- 𝐹𝑜𝑟 𝑂𝑠𝑐𝑎𝑟 𝐴𝑙𝑚𝑒𝑛𝑑𝑎𝑟𝑒𝑧</h1></a>-->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse "   id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item ">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item " routerLinkActive="active">
+        <a class="nav-link" routerLink="/homePage" >Home <span class="sr-only"></span></a>
       </li>
 
       <!----->
-      <li class="nav-item"  routerLinkActive="active">
+      <li class="nav-item" >
         <a class="nav-link" routerLink="/game" >Game</a>
       </li>
       <!----->
       <!----->
       <li class="nav-item" >
-        <a class="nav-link" routerLink="/clientes" >Clientes</a>
+        <a class="nav-link" routerLink="/tableclientes" > List of Clients</a>
       </li>
       <!----->
 
       <li class="nav-item" >
-        <a class="nav-link" routerLink="/clientes/form" >Register</a>
+        <a class="nav-link" routerLink="/clientes/form" >Register New User</a>
       </li>
       <!----->
 
 
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+  <!--  <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
-    </form>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>-->
   </div>
 </nav>
 <br><br><br>

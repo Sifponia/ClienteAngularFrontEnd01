@@ -7,3 +7,10 @@ html{
 body{
   margin-bottom: 60px;
 }**/
+
+
+body{
+  background-image: linear-gradient(25deg, #fffef8 0, #fffdf7 50%, #fdfcf6 100%);
+
+}
+

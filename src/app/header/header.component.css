@@ -1,0 +1,29 @@
+.bg-light {
+  background-color: transparent!important;
+}
+
+li > a:hover{
+  color: #7da6cc !important;
+
+}
+
+
+.navbar {
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 11rem!important;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-left: 47rem!important;
+}
+
+.title{
+  margin-left: 1rem;
+}
+
+h1{
+  color: coral;
+}
+
+

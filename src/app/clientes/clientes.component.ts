@@ -1,7 +1,10 @@
-import {Component, OnInit} from '@angular/core';
+import {AfterContentInit, ChangeDetectorRef, Component, OnInit, ViewChild} from '@angular/core';
 import {Cliente} from "./cliente";
 import {ClientesService} from "./clientes.service";
 import Swal from "sweetalert2";
+import {Router, ActivatedRoute} from "@angular/router";//Se añade ActivatedRoute para actualizar datos del cliente:: UPDATE
+//import { MdbTablePaginationComponent, MdbTableDirective } from '@PATH-TO-MDB-ANGULAR-HERE';
+
 
 @Component({
   selector: 'app-clientes',
@@ -9,6 +12,13 @@ import Swal from "sweetalert2";
   styleUrls: ['./clientes.component.css']
 })
 export class ClientesComponent implements OnInit {
+
+  //@ViewChild(MdbTablePaginationComponent, { static: true }) mdbTablePagination: MdbTablePaginationComponent;
+//  @ViewChild(MdbTableDirective, { static: true }) mdbTable: MdbTableDirective
+
+  elements: any = [];
+  previous: any = [];
+  headElements = ['ID', 'First', 'Last', 'Handle'];
 
 //Este array inicia con los datos del Json
   clientes: Cliente[] = [];
@@ -18,8 +28,8 @@ export class ClientesComponent implements OnInit {
 
 
 
-  //Cuando el service esta creado se realiza una inyeccion de dependecia en el constructor
-  constructor(private clienteService: ClientesService) {
+  //Cuando el service esta creado se realiza una inyeccion de dependencia en el constructor
+  constructor(private clienteService: ClientesService, private router: Router, private cdRef: ChangeDetectorRef   ) {
   }
 
   ngOnInit(): void {
@@ -29,12 +39,20 @@ export class ClientesComponent implements OnInit {
       //Funcion anonima funcional
       clientes => this.clientes = clientes
     );
+/*
+    for (let i = 1; i <= 15; i++) {
+      this.elements.push({id: i.toString(), first: 'User ' + i, last: 'Name ' + i, handle: 'Handle ' + i});
+    }
+
+    this.mdbTable.setDataSource(this.elements);
+    this.elements = this.mdbTable.getDataSource();
+    this.previous = this.mdbTable.getDataSource();*/
+
   }
 
 
   //Delete Cliente
   delete(clientee: Cliente): void {
-
     //SweeAlert
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
@@ -80,6 +98,10 @@ export class ClientesComponent implements OnInit {
 
 
   }
+
+
+
+
 
 }
 
